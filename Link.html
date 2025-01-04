@@ -1,71 +1,523 @@
 <html>
-    <head>
-        <title>♥ LINK EXERCISE ♥</title>
-    </head>
-    <body>
-        <h1>General Information Link</h1>
 
-        <!--Relative Link-->
-        Click <a href="download1.php/">
-        Go to download Page 1</a> to download
-        <br>
-        Click <a href="download2.php/">
-        Go to download Page 2</a> to download
+<link rel="stylesheet" href="style.css">
 
-        <!--Absolute Link-->
-        <a href="file:///C:/Users/HP/Desktop/mywebsite/download1.php/logo_uitm.pdf">
-        View Logo uitm </a>
+<body>
+<div class="topnav">
+<a class="active" href="index.html">HOME</a>
+<a href="biodata.html" target="_self" >MYSELF</a>
+<a href="myself.html" target="_self" >GALLERY</a>
+<a href="list.html" target="_self" >MUSIC</a>
+<a href="Link.html" target="_self" >FOOD</a>
+<a href="table.html" target="_self" >MOVIE</a>
+</div>
+</body>
 
-        <br>
+<style>
+    body
+    {
+        background-image: url(images/GIF\ SONG.gif);
+    }
+</style>
 
-        <a href="download2.php/statistic.html">
-        Get Data
-        </a>
 
-        <hr size="3" color="Purple">
-        
-        <!--Local - Link to other pages within current website-->
-        <a href="biodata.html" target="_blank">Biodata</a>
-        <a href="myself.html" target="_blank">Myself</a>
-        <a href="Link.html" target="_blank">Link</a>
-        <br>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Traditional Foods of Malaysia</title>
+    <style>
+        /* Section Styling */
+        #about {
+            background: linear-gradient(to bottom, #FFB6C1, #e68cb3cc); /* Pastel pink gradient */
+            padding: 60px 20px;
+            text-align: center;
+            border-bottom: 2px solid #FF6FAD; /* Light border at the bottom */
+        }
 
-        <!--Creating button using button onclick-->
-        <button onclick="document.location =
-        'biodata.html'">Biodata</button>
-        <button onclick="document.location =
-        'myself.html'">myself</button>
-        <button onclick="document.location =
-        'Link.html'">Link</button>
+        .about-container {
+            max-width: 900px;
+            margin: 0 auto;
+            background-color: #FFFFFF;
+            padding: 40px;
+            border-radius: 20px;
+            box-shadow: 0 12px 20px rgba(155, 6, 75, 0.1);
+            transform: translateY(20px); /* Slightly lifted effect */
+        }
 
-        <p>
-        <!--Creating image as hyperlink, local link-->
-        <a href="biodata.html">
-        <img src="images/button.png">
-        </a>
-        
-        <!--Creating image as hyperlink, global link-->
-        <a href="https://www.instagram.com/liey4.mai/profilecard/?igsh=d3hjbHJwYXhoODl5">
-        <img src="images/button insta.png">
-        </a>
+        .about-container h2 {
+            font-family: Aboreto;
+            color: #a30b4d;
+            font-size: 2.5em;
+            margin-bottom: 20px;
+            text-shadow: 1px 1px 5px rgba(221, 98, 125, 0.918);
+        }
 
-        <a href="mailto:nuralieya1901@gmail.com">
-        <img src="images/button insta.png">
-        </a>
+        .about-container p {
+            font-family: Aboreto;
+            color: #66122b;
+            font-size: 1.4em;
+            line-height: 1.6;
+            margin-bottom: 20px;
+            text-align: center;
+        }
 
+        .about-container::before, .about-container::after {
+            content: ".・。.・゜✭・.・✫・゜・。.";
+            font-size: 2em;
+            display: block;
+            margin-top: 20px;
+        }
+
+        .about-container::before {
+            margin-bottom: 20px;
+        }
+
+        /* Adding a soft hover effect on the container */
+        .about-container:hover {
+            transform: translateY(-5px); /* Slight lift on hover */
+            box-shadow: 0 18px 25px rgb(151, 5, 73);
+            transition: all 0.3s ease-in-out;
+        }
+    </style>
+</head>
+<body>
+    <section id="about">
+        <div class="about-container">
+            <h2>Discover the Rich Heritage of Malaysian Cuisine</h2>
+            <p>Malaysia is a vibrant melting pot of cultures, where the culinary traditions of Malay, Chinese, Indian, 
+                and indigenous peoples blend to create a unique and exciting food scene. From the famous Nasi Lemak 
+                to the irresistible Satay, each dish tells a story of history, culture, and the diverse communities 
+                that call this beautiful country home. Join us on a journey through Malaysia’s traditional foods and 
+                explore the tastes that define the nation's rich heritage.</p>
+        </div>
+    </section>
+</body>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Food Traditions in Malaysia</title>
+  <style>
+    /* Basic styling for the page */
+    body {
+      font-family: Aboreto;
+      margin: 0;
+      padding: 0;
+      background-color: #fef2f2;
+      color: #d10d79;
+    }
+
+    header {
+      background-color: #f8c8dc;
+      padding: 20px;
+      text-align: center;
+    }
+
+    header h1 {
+      margin: 0;
+      font-family: Aboreto;
+      font-size: 50px;
+      color: #dd3078;
+    }
+
+    section {
+      margin: 20px;
+    }
+
+    /* Image Map Styling */
+    img {
+      max-width: 100%;
+      height: auto;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(247, 42, 145, 0.678);
+    }
+
+    .image-map-section {
+      text-align: center;
+      margin-top: 40px;
+      color: #dd066a;
+    }
+
+    .image-map-description {
+      margin-top: 20px;
+      font-family: Aboreto;
+      font-size: 20px;
+      color: #dd066a;
+    }
+
+    .image-map-description a {
+      color: #ff6b81;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    .image-map-description a:hover {
+      color: #ff9aa2;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>•❣•୨୧ 𝙏𝙧𝙖𝙙𝙞𝙩𝙞𝙤𝙣𝙖𝙡 𝙁𝙤𝙤𝙙𝙨 𝙤𝙛 𝙈𝙖𝙡𝙖𝙮𝙨𝙞𝙖 ୨୧•❣•</h1>
+  </header>
+
+  <section class="image-map-section">
+    
+    
+    <!-- Image Map of Malaysia with food-related links -->
+    <img src="images/image maps.jpg" usemap="#image-maps">
+
+    <map name="image-maps">
+      <area target="_blank" alt="Makanan Tradisi Pahang" title="Makanan Tradisi Pahang" href="https://saji.my/makanan-tradisional-pahang/" coords="196,217,267,205,283,241,316,279,311,342,222,288,212,262" shape="poly">
+      <area target="_blank" alt="Makanan Tradisi Selangor" title="Makanan Tradisi Selangor" href="https://www.nona.my/5-makanan-tradisi-orang-selangor-wajib-cuba-sedap-dan-menggiurkan/" coords="162,261,214,267,212,288,229,299,217,313,198,313,192,325,183,296" shape="poly">
+      <area target="_blank" alt="Makanan Tradisi Perak" title="Makanan Tradisi Perak" href="https://saji.my/makananan-tradisional-perak/" coords="130,181,157,166,170,135,184,146,207,129,214,160,202,166,188,225,204,263,148,255,140,232" shape="poly">
+      <area target="_blank" alt="Makanan Tradisi Perlis" title="Makanan Tradisi Perlis" href="https://khalifahmedianetworks.com/13-makanan-tradisional-menarik-di-perlis/" coords="123,100,130,88,119,76,82,97,97,118,111,107" shape="poly">
+      <area target="_blank" alt="Makanan Tradisi Pulau Pinang" title="Makanan Tradisi Pulau Pinang" href="https://www.wanisukarno.com/2020/12/masakan-tradisional-di-pulau-pinang-yang-susah-nak-lupa.html" coords="138,150,136,173,114,165" shape="poly">
+      <area target="_blank" alt="Makanan Tradisi Kedah" title="Makanan Tradisi Kedah" href="https://saji.my/makanan-tradisional-kedah/" coords="155,95,178,113,169,131,155,165,138,174,141,152,126,146,127,119,119,103,137,88" shape="poly">
+      <area target="_blank" alt="Makanan Tradisi Johor" title="Makanan Tradisi Johor" href="https://saji.my/makanan-tradisional-johor/" coords="271,317,261,343,258,370,315,415,336,406,370,412,354,380,341,349,341,325,321,340,294,342" shape="poly">
+      <area target="_blank" alt="Makanan Tradisi Negeri Sembilan" title="Makanan Tradisi Negeri Sembilan" href="https://saji.my/makanan-negeri-sembilan/" coords="219,310,233,293,270,317,259,341,246,338,220,343,213,334,212,312" shape="poly">
+      <area target="_blank" alt="Makanan Tradisi Kelantan" title="Makanan Tradisi Kelantan" href="https://saji.my/makanan-tradisional-kelantan/" coords="238,115,252,111,258,133,254,144,253,162,263,199,239,204,218,199,211,211,192,205,205,167,220,164,213,137,227,132" shape="poly">
+      <area target="_blank" alt="Makanan Tradisi Terengganu" title="Makanan Tradisi Terengganu" href="https://saji.my/makanan-tradisional-terengganu/" coords="263,133,291,152,316,206,316,234,304,249,286,232,291,217,283,202,263,190,253,154" shape="poly">
+      <area target="_blank" alt="Makanan Tradisi Melaka" title="Makanan Tradisi Melaka" href="https://www.pigeonsmaine.com/makanan-tradisional-melaka/" coords="223,345,252,340,257,346,254,362,230,357" shape="poly">
+      <area target="_blank" alt="Makanan Tradisi Sabah" title="Makanan Tradisi Sabah" href="https://saji.my/makanan-tradisi-sabah/" coords="682,118,701,117,727,70,753,61,766,109,796,107,826,128,793,140,781,144,795,159,769,170,689,168,684,156" shape="poly">
+      <area target="_blank" alt="Makanan Tradisi Sarawak" title="Makanan Tradisi Sarawak" href="https://saji.my/makanan-tradisi-sarawak/" coords="523,223,585,212,615,181,630,160,654,179,662,145,681,139,688,203,643,279,606,285,586,272,556,270,535,297,486,288,457,256,511,264" shape="poly">
+    </map>
+
+    <div class="image-map-description">
+      <p>︵‿︵‿୨♡ Click on any of the states to explore their delicious traditional foods! ♡୧‿︵‿︵</p>
+    </div>
+  </section>
+</body>
+
+<br>
+<hr style="border: none; border-top: 2px dashed #FF6FAD; margin: 20px 0;">
+<br>
+
+
+<p>
+    <center><font color="#f0109b"><h2>♡ Explore Delicious Flavors ♡</h2></font></center>
+</p>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Food Locations</title>
+    <style>
+        .food-gallery {
+            display: flex;
+            gap: 20px;
+            justify-content: center;
+            flex-wrap: wrap;
+            padding: 20px;
+        }
+
+        .food-item {
+            width: 250px;
+            height: 250px;
+            text-align: center;
+            cursor: pointer;
+            position: relative;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+            transition: all 0.3s ease; /* Smooth transition */
+        }
+
+        .food-item:hover {
+            transform: translateY(-10px); /* Hover effect to raise the image */
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3); /* Increased shadow on hover */
+        }
+
+        .food-item img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover; /* Ensures image covers the box without distortion */
+            border-radius: 10px;
+        }
+
+        .food-item p {
+            position: absolute;
+            bottom: 10px;
+            left: 50%;
+            transform: translateX(-50%);
+            background-color: rgba(0, 0, 0, 0.5);
+            color: white;
+            padding: 5px;
+            width: 100%;
+            text-align: center;
+            font-family: "Times New Roman", Times, serif;
+            font-size: 16px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="food-gallery">
+        <!-- Food 1 -->
+        <div class="food-item" onclick="openLocation('https://maps.app.goo.gl/A2XTi1WHapVnjPA8A')">
+            <img src="images/makanan 1.jpg" alt="Food 1">
+            <p>Delicious Delight Burger</p>
+        </div>
+
+        <!-- Food 2 -->
+        <div class="food-item" onclick="openLocation('https://maps.app.goo.gl/DGHjgso4Uvga5Rws5')">
+            <img src="images/makanan 2.jpg" alt="Food 2">
+            <p>Garlic Rice</p>
+        </div>
+
+        <!-- Food 3 -->
+        <div class="food-item" onclick="openLocation('https://maps.app.goo.gl/2qTw2BxuCtnPE4Z29')">
+            <img src="images/makanan 3.jpg" alt="Food 3">
+            <p>Platter Set</p>
+        </div>
+    </div>
+
+    <script>
+        // Function to open the location in Google Maps when a food item is clicked
+        function openLocation(url) {
+            window.open(url, "_blank");  // Opens the URL in a new tab
+        }
+    </script>
+    <center><p style="font-size: 20px;">︵‿︵‿୨♡ Please click on the image to learn more about the location ♡୧‿︵‿︵</p></center>
+
+
+</body>
+
+<br>
+<hr style="border: none; border-top: 2px dashed #FF6FAD; margin: 20px 0;">
+<br>
+
+<p>
+    <center><font color="#f0109b"><h2>♡ Tasty Moments: My Cooking Journey ♡</h2></font></center>
+</p>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Food and PDF</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #fff5f5; /* Light pink background */
+        }
+
+        .food-section {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+            background: rgba(255, 192, 203, 0.5); /* Transparent pink background */
+            border-radius: 20px; /* Rounded corners */
+            width: 80%;
+            margin: 20px auto; /* Center the section */
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+        }
+
+        .food-item {
+            text-align: center;
+            margin: 10px;
+        }
+
+        .food-image {
+            width: 250px;
+            height: 250px;
+            border: 2px solid #FF6FAD;
+            border-radius: 10px;
+            transition: transform 0.3s ease;
+        }
+
+        .food-image:hover {
+            transform: scale(1.1); /* Enlarges the image slightly when hovered */
+        }
+
+        .food-caption {
+            margin-top: 10px;
+            font-size: 16px;
+            color: #8b0841; /* Pink text color */
+            font-weight: bold;
+            font-family: 'Dancing Script', cursive; /* Aesthetic font */
+        }
+
+        @import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&display=swap');
+    </style>
+</head>
+<body>
+
+    <div class="food-section">
+        <div class="food-item">
+            <a href="pdf/RECIPE SPAGHETTI BOLOGNESE.pdf" target="_blank">
+                <img src="images/spaghetti bolognese.jpg" class="food-image" alt="Spaghetti Bolognese">
+            </a>
+            <div class="food-caption">Spaghetti Bolognese</div>
+        </div>
+
+        <div class="food-item">
+            <a href="pdf/RECIPE PAANIPURI.pdf" target="_blank">
+                <img src="images/paanipuri.jpg" class="food-image" alt="Paanipuri">
+            </a>
+            <div class="food-caption">Paanipuri</div>
+        </div>
+
+        <div class="food-item">
+            <a href="pdf/RECIPE BAKED MACARONI AND CHEESE.pdf" target="_blank">
+                <img src="images/macaroni baked.jpg" class="food-image" alt="Baked Macaroni and Cheese">
+            </a>
+            <div class="food-caption">Baked Macaroni and Cheese</div>
+        </div>
+    </div>
+</body>
+
+<br>
+
+<center><p style="font-size: 20px;">︵‿︵‿୨♡ Please click on the image to discover the recipe of the dish. ♡୧‿︵‿︵</p></center>
+
+<br>
+
+<section style="max-width: 800px; margin: 30px auto; padding: 20px; background-color: rgba(248, 203, 223, 0.897); border-radius: 15px; box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);">
+    <h2 style="font-family: 'Georgia', serif; color: #f0109b; text-align: center; margin-bottom: 20px;"> ♡ Top 3 Best Malaysian Foods ♡</h2>
+    
+    <ol style="padding-bottom: 20px; font-size: 18px; color: #6a1350; list-style-type: decimal; line-height: 1.8;">
+        <li> <b>Nasi Lemak</b>
+            <br>A beloved dish and Malaysia's national food, Nasi Lemak consists of fragrant coconut milk rice, served with spicy sambal, crispy fried anchovies, hard-boiled eggs, and a side of cucumber. It’s often eaten for breakfast but loved any time of day. </li>
+        <li> <b>Char Kway Teow</b>
+            <br> A famous street food from Penang, Char Kway Teow is a stir-fried flat rice noodle dish with prawns, Chinese sausage, egg, bean sprouts, and sometimes cockles, all cooked in a wok with a smoky flavor. </li>
+        <li> <b>Satay</b>
+            <br>Satay consists of skewered and grilled meat (usually chicken, beef, or lamb) served with a rich peanut sauce. It’s a popular snack or appetizer, often accompanied by a side of rice cakes (ketupat). </li>
+    </ol>
+</section>
+
+<br>
+
+<section style="
+    max-width: 900px;
+    margin: 30px auto;
+    text-align: center;
+    padding: 20px;
+    background-color: rgb(250, 209, 222);
+    border-radius: 15px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);">
+
+    <div style="
+        display: flex;
+        justify-content: center;
+        gap: 20px;">
+        <!-- Image 1 -->
+        <div style="
+            text-align: center;
+            flex: 1;">
+            <img src="images/nasi lemak.jpg" alt="Image 1" style="
+                width: 250px;
+                height: 250px;
+                border-radius: 50%;
+                border: 4px solid #f0109b;
+                object-fit: cover;">
+            <p style="
+                font-family: 'Georgia', serif;
+                color: #6a1350;
+                margin-top: 10px;">
+                𝐍𝐀𝐒𝐈 𝐋𝐄𝐌𝐀𝐊
+            </p>
+        </div>
+        <!-- Image 2 -->
+        <div style="
+            text-align: center;
+            flex: 1;">
+            <img src="images/char kway teow.jpg" alt="Image 2" style="
+                width: 250px;
+                height: 250px;
+                border-radius: 50%;
+                border: 4px solid #f0109b;
+                object-fit: cover;">
+            <p style="
+                font-family: 'Georgia', serif;
+                color: #6a1350;
+                margin-top: 10px;">
+                𝐂𝐇𝐀𝐑 𝐊𝐖𝐀𝐘 𝐓𝐄𝐎𝐖
+            </p>
+        </div>
+        <!-- Image 3 -->
+        <div style="
+            text-align: center;
+            flex: 1;">
+            <img src="images/satay.jpg" alt="Image 3" style="
+                width: 250px;
+                height: 250px;
+                border-radius: 50%;
+                border: 4px solid #f0109b;
+                object-fit: cover;">
+            <p style="
+                font-family: 'Georgia', serif;
+                color: #6a1350;
+                margin-top: 10px;">
+                𝐒𝐀𝐓𝐀𝐘
+            </p>
+        </div>
+    </div>
+</section>
+
+<br>
+
+
+<section style="max-width: 900px; margin: 30px auto; padding: 20px; background-color: rgba(248, 177, 210, 0.6); border-radius: 15px; box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);">
+    <h2 style="text-align: center; font-family: 'Georgia', serif; color: #f0109b; margin-bottom: 20px; font-size: 28px;">
+        ♡ Cooking Video Tutorial ♡
+    </h2>
+
+    <!-- Video Section -->
+    <div style="text-align: center; margin-bottom: 20px; background-color: #fff; border-radius: 15px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);">
+        <video width="80%" controls style="border-radius: 10px; margin-bottom: 15px;">
+            <source src="video/video masakan.MP4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+    </div>
+
+    <!-- Caption for Credit -->
+    <div style="text-align: center; font-family: 'Arial', sans-serif; color: #6a1350; font-size: 16px; font-style: italic;">
+        <p style="margin: 0;">
+            𝐕𝐢𝐝𝐞𝐨 𝐂𝐫𝐞𝐝𝐢𝐭: 
+            <a href="https://m.youtube.com/watch?v=iP7Fbpv5tqI&pp=ygUVdHV0b3JpYWwgbWFzYWsgc2ltcGxl">
+                [Malina Lina Pg]
+            </a>
         </p>
+    </div>
+</section>
 
-        <!--Image Maps-->
-        <img src="images/image maps.jpg" usemap="#image-maps">
-
-        <map name="image-maps">
-            <area target="_blank" alt="UITM NEGERI SEMBILAN" title="UITM NEGERI SEMBILAN" href="https://nsembilan.uitm.edu.my/" coords="220,310,258,339" shape="rect">
-            <area target="_blank" alt="UITM JOHOR" title="UITM JOHOR" href="https://johor.uitm.edu.my/" coords="335,344,343,363,355,387,318,405,260,370,266,342,276,327,305,346" shape="poly">
-            <area target="_blank" alt="UITM KEDAH" title="UITM KEDAH" href="https://kedah.uitm.edu.my/" coords="146,131,19" shape="circle">
-        </map>
-
-
-
-
+    <body>
+        <div style="text-align: center; margin-top: 20px;">
+            <a href="#top" style="
+                display: inline-block;
+                background-color: #A45C79;
+                color: white;
+                text-decoration: none;
+                font-family: Arial, sans-serif;
+                font-size: 14px;
+                padding: 10px 15px;
+                border-radius: 5px;
+            ">
+                Back to Top
+            </a>
+        </div>
     </body>
+<br>
+
+<footer style="
+    background-color: rgba(250, 235, 215, 0.9); 
+    padding: 10px 20px; 
+    text-align: center; 
+    font-family: 'Georgia', serif; 
+    font-size: 14px; 
+    color: #6a1350; 
+    border-top: 2px solid #f0109b; 
+    box-shadow: 0 -4px 6px rgba(0, 0, 0, 0.1);">
+    <b>© 2024 Nur Alieya Maisara. All Rights Reserved.</b>
+    <br>
+    <span style="font-size: 12px; color: #9c5670;">Last Updated: December 29, 2024</span>
+</footer>
+
+
 </html>
